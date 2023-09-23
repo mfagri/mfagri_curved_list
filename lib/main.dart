@@ -1,4 +1,4 @@
-import 'package:curvelist/mycurvlist.dart';
+import 'package:curvelist/mfagrilist.dart';
 import 'package:curvelist/painter.dart';
 import 'package:flutter/material.dart';
 
@@ -83,7 +83,8 @@ final List<Color> colorList = [
         child: Container(
           height: 500,
           color: Colors.amber,
-          child: Mfagrilist(itemBuilder: (context,index){
+          child: 
+          Mfagrilist(itemBuilder: (context,index){
             return Center(
                                 child: CustomPaint(
                                   size: Size(
@@ -94,12 +95,12 @@ final List<Color> colorList = [
                                       RPSCustomPainter(color: colorList[index]),
                                 ),
                               );
-          }, itemCount: colorList.length,
-           scaleMiddleItem: true,
-                          // curveScale: 8,
-                          viewPortSize: 0.3,
-                          disableInfiniteScrolling: false,
-                          middleItemScaleRatio: 1,
+          },
+          itemCount: colorList.length,
+          scaleMiddleItem: true,
+          viewPortSize: 0.3,
+          disableInfiniteScrolling: false,
+          middleItemScaleRatio: 1,
           ),
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
