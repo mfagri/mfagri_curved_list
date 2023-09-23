@@ -10,7 +10,7 @@ A Flutter widget for creating visually appealing carousels with customizable ite
 
 - [About](#about)
 - [Key Properties](#key-properties)
-- [Examples](#examples)
+- [Example](#example)
 
 ## About
 
@@ -18,17 +18,17 @@ A Flutter widget for creating visually appealing carousels with customizable ite
 
 ## Key Properties
 
-# viewPortSize: A double value between 0 and 1 that determines the size of the visible portion of the items. For example, a value of 0.3 means that only 30% of the items will be visible at a time.
+ viewPortSize: A double value between 0 and 1 that determines the size of the visible portion of the items. For example, a value of 0.3 means that only 30% of the items will be visible at a time.
 
-# disableInfiniteScrolling: A boolean that determines whether infinite scrolling is enabled. When set to false, the list will continue scrolling indefinitely in both directions. When set to true, the list will stop scrolling when it reaches the beginning or end of the items.
+ disableInfiniteScrolling: A boolean that determines whether infinite scrolling is enabled. When set to false, the list will continue scrolling indefinitely in both directions. When set to true, the list will stop scrolling when it reaches the beginning or end of the items.
 
-# middleItemScaleRatio: A double value that specifies the scale factor for the middle item. This property is only relevant when scaleMiddleItem is set to true. The default value is 1, meaning no scaling.
+middleItemScaleRatio: A double value that specifies the scale factor for the middle item. This property is only relevant when scaleMiddleItem is set to true. The default value is 1, meaning no scaling.
 
-# scaleMiddleItem: A boolean that determines whether to scale the middle item. When set to true, the middle item will be scaled according to the middleItemScaleRatio property.
+ scaleMiddleItem: A boolean that determines whether to scale the middle item. When set to true, the middle item will be scaled according to the middleItemScaleRatio property.
 
-# itemBuilder: A callback function that defines the widget for each item in the list.
+ itemBuilder: A callback function that defines the widget for each item in the list.
 
-# itemCount: An integer that specifies the total number of items in the list.
+itemCount: An integer that specifies the total number of items in the list.
 
 ## Example 
 ```dart
